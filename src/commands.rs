@@ -1,8 +1,8 @@
 //! Test commands and their registration
 
 use crate::events::emit;
-use crate::generate_handler;
-use command_macros::command;
+
+use macros::{command, generate_handler};
 use serde_json::json;
 
 #[command]

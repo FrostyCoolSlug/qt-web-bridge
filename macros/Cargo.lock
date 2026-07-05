@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "command_macros"
+name = "macros"
 version = "0.1.0"
 dependencies = [
  "quote",
