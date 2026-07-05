@@ -16,6 +16,10 @@ fn stage_web_assets() -> String {
     let mut dir = std::env::temp_dir();
     dir.push("qt-web-bridge-assets");
 
+    if dir.exists() {
+        fs::remove_dir_all(&dir).unwrap();
+    }
+
     fs::create_dir_all(&dir).unwrap();
 
     WEB.extract(&dir).unwrap();
