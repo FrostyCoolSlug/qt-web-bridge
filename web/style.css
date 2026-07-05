@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #12141a;
+  color: #e6e6e6;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+section {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #1b1e27;
+  border-radius: 8px;
+}
+
+input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #0e0f13;
+  color: #e6e6e6;
+  width: 260px;
+}
+
+button {
+  padding: 0.4rem 0.9rem;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background: #3a6df0;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+#log {
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-left: 1.2rem;
+}

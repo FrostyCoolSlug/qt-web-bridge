@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Rust Backend Demo</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="qwebchannel.js"></script>
+    <script src="backend.js"></script>
+</head>
+<body>
+<main>
+    <h1>Web content, talking to Rust</h1>
+    <p id="status">Connecting to backend</p>
+
+    <section>
+        <label for="payload">Message to send to Rust:</label>
+        <input id="payload" type="text" value="hello from the web view"/>
+        <button id="send-btn" disabled>Send to Rust</button>
+    </section>
+
+    <section>
+        <h2>Log</h2>
+        <ul id="log"></ul>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
