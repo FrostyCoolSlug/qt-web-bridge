@@ -20,6 +20,12 @@ fn stage_web_assets() -> String {
 
     WEB.extract(&dir).unwrap();
 
+    fs::write(
+        dir.join("qwebchannel.js"),
+        include_str!(concat!(env!("OUT_DIR"), "/qwebchannel.js")),
+    )
+    .unwrap();
+
     let index = dir.join("index.html");
     format!("file://{}", index.to_string_lossy())
 }
